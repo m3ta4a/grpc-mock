@@ -4,7 +4,7 @@
 defmodule GrpcMock.Mixfile do
   use Mix.Project
 
-  @version "0.3.0"
+  @version "0.3.1"
 
   def project do
     [
@@ -56,7 +56,7 @@ defmodule GrpcMock.Mixfile do
   defp deps do
     [
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
-      {:grpc, "~> 0.3"},
+      {:grpc, github: "elixir-grpc/grpc", sha: "eff8a8828d27ddd7f63a3c1dd5aae86246df215e"},
       {:ex_doc, "~> 0.18.0", only: :dev}
     ]
   end
