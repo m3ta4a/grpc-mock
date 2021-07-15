@@ -57,6 +57,7 @@ defmodule GrpcMock.Mixfile do
     [
       {:credo, "~> 0.8", only: [:dev, :test], runtime: false},
       {:grpc, github: "elixir-grpc/grpc", sha: "eff8a8828d27ddd7f63a3c1dd5aae86246df215e"},
+      {:cowlib, "~> 2.11.0", override: true},
       {:ex_doc, "~> 0.18.0", only: :dev}
     ]
   end
